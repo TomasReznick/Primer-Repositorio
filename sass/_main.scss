@@ -4,26 +4,26 @@
 }
 body{
 	background-color: $primario;
-	font-family: $fontFamily;
+	font-family: $fontTitle;
 }
 /* <--BANNER--> */
 .banner{
 	background-image: url("../media/logitechblanco.jpg");
 	background-size: cover;
 	background-position: center center;
+	background-attachment: fixed;
 	height: 25vh;
 }
 /* <--INICIO--> */
-.miPrimerEstilo{
-		color: $colorNegro;
+.titulo{
+	.miPrimerEstilo{
+		color: $colorBlanco;
 		text-align:center;
-		/*background-color: #a2e4e8;*/
-		background: rgb(122,153,161);
-		background: linear-gradient(72deg, rgba(122,153,161,1) 17%, rgba(130,210,241,1) 100%);
-		border-bottom: 3px solid black;
-		font-family: $fontFamily;
+		background-color: $tercero;
+		font-family: $fontTitle;
 	}
-.container{
+}
+.inicio{
 		.setup{
 		width: 100%;
 		height: 100%;
@@ -45,7 +45,7 @@ body{
 		justify-content:center;
 	}
 	.descBlackwidow{
-		font-family: $fontFamily;
+		font-family: $fontTitle;
 		line-height: 1.2;
 		font-style: normal;
 		border-bottom: 3px solid black;
@@ -61,11 +61,12 @@ body{
 		justify-content:center;
 	}
 	.descXtrfy{
-		font-family: $fontFamily;
+		font-family: $fontTitle;
 		line-height: 1.2;
 		font-style: normal;
 		border-bottom: 3px solid black;
 		margin-bottom:5px;
+
 	}
 }
 
@@ -73,43 +74,32 @@ body{
 .youtube{
 	display: flex;
 	justify-content: center;
-	border-bottom: 3px solid black;
-	margin-bottom: 5px;
-	padding-bottom: 5px;
-
-}
-
-/* <--AURICULARES--> */
-.auriculares1{
-	.krakenx{
-	width: 100vh;
-	}
-	.contKrakenx{
-		display: flex;
-		justify-content:center;
-	}
-	.descKrakenx{
-		font-family: $fontFamily;
-		line-height: 1.2;
-		font-style: normal;
-		border-bottom: 3px solid black;
-		margin-bottom:5px;
+	margin-bottom: 3px;
+	padding-bottom: 3px;
+	height: 500px;
+	.youtubeVideo{
+		width: 90%;
+		height: 100%;
 	}
 }
-.auriculares2{
-	.blackshark{
-	width: 100vh;
-	}
-	.contBlackshark{
-		display: flex;
-		justify-content:center;
-	}
-	.descBlackshark{
-		font-family: 'Monda', sans-serif;
-		line-height: 1.2;
-		font-style: normal;
-		border-bottom: 3px solid black;
-		margin-bottom:5px;
+
+/* <--AURICULARES/TECLADOS--> */
+
+.card{
+	background-color:$primario;
+		.boton{
+			background-color:$tercero;
+		    &:hover{
+		    	cursor:pointer;
+	    		transform: translateY(-3px);
+	    		transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+		    }
+		    &:active{
+		    	transform:translateY(3px);
+		    }
+		    &focus{
+		    	height: 60px;
+	    }
 	}
 }
 
@@ -119,15 +109,16 @@ body{
     width: 400px;
     padding: 30px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 4px;
-    font-family:$fontFamily;
+    font-family:$fontTitle;
     color: $colorBlanco;
     box-shadow: 7px 13px 37px #000;
     h1{
 	    margin-top: 8px;
 	    margin-bottom: 10px;
-	    font-family:$fontFamily;
+	    font-family:$fontTitle;
 	    text-align: center;
     }
     .formi{
@@ -137,7 +128,7 @@ body{
 	    border-radius: 4px;
 	    margin-bottom: 20px;
 	    border: 1px solid #1f53c5;
-	    font-family:$fontFamily;
+	    font-family:$fontTitle;
 	    color: $colorBlanco;
 	}
 	.boton{
@@ -149,7 +140,7 @@ body{
 	    color: $colorBlanco;
 	    text-transform: uppercase;
 	    background: linear-gradient(to left top, #005aa7,#fffde4);
-	    font-family:$fontFamily;
+	    font-family:$fontTitle;
 	    &:hover{
 	    	cursor:pointer;
     		transform: translateY(-3px);
@@ -165,11 +156,11 @@ body{
 }
 
 /* <--FOOTER--> */
-.container{
+/*.container{
 	.facebook{
 		background: linear-gradient(to left top, #0f2f39,#0072ff);
 		color: white;
-		font-family: 'Monda', sans-serif;
+		font-family: $fontTitle;
 		cursor: pointer;
 		text-decoration: none;
 			&:hover{
@@ -180,7 +171,7 @@ body{
 	.instagram{
 		background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
 		color: white;
-		font-family: 'Monda', sans-serif;
+		font-family: $fontTitle;
 		cursor: pointer;
 		text-decoration: none;
 			&:hover{
@@ -191,7 +182,7 @@ body{
 	.twitter{
 		background: linear-gradient(to right, #2980B9, #6DD5FA);
 		color: white;
-		font-family: 'Monda', sans-serif;
+		font-family: $fontTitle;
 		cursor: pointer;
 		text-decoration: none;
 			&:hover{
@@ -200,7 +191,7 @@ body{
 		}
 	}
 	
-}
+}*/
 .whatsapp{
 	position: fixed;
 	bottom: 0;
@@ -208,5 +199,56 @@ body{
 	width: 50px;
 	margin-right: 20px;
 	cursor: pointer;
+}
 
+.footer{
+  padding:4px 0;
+  background-color:$tercero;
+  color:$colorBlanco;
+		ul {
+	  	padding:0;
+	  	list-style:none;
+	  	text-align:center;
+	  	font-size:18px;
+	  	line-height:1.6;
+	  	margin-bottom:0;
+	  		a {
+  			color:inherit;
+  			text-decoration:none;
+  			opacity:0.8;
+  			&hover{
+  				opacity:1;
+  			}
+		}
+	}
+		li {
+  		padding:0 10px;
+	}
+	.social {
+	  text-align:center;
+	  padding:55px;
+			  a {
+			  font-size:24px;
+			  width:40px;
+			  height:40px;
+			  line-height:40px;
+			  display:inline-block;
+			  text-align:center;
+			  border-radius:50%;
+			  border:1px solid #ccc;
+			  margin:0 8px;
+			  color:inherit;
+			  opacity:0.75;
+			  &hover{
+			  	opacity:0.9;
+			  }
+		}
+	}
+	.copyright {
+	  margin-top:55px;
+	  text-align:center;
+	  font-size:13px;
+	  color:#aaa;
+	  margin-bottom:0;
+	}
 }

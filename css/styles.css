@@ -1,84 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap");
-/* line 1, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
+@import url('<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Tourney:wght@500&display=swap" rel="stylesheet">');
+/* line 1, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 5, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
+/* line 5, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
 body {
   background-color: #eff2e4;
-  font-family: "Monda", sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 /* <--BANNER--> */
-/* line 10, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
+/* line 10, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
 .banner {
   background-image: url("../media/logitechblanco.jpg");
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
   height: 25vh;
 }
 
 /* <--INICIO--> */
-/* line 17, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
-.miPrimerEstilo {
-  color: black;
+/* line 19, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
+.titulo .miPrimerEstilo {
+  color: white;
   text-align: center;
-  /*background-color: #a2e4e8;*/
-  background: #7a99a1;
-  background: linear-gradient(72deg, #7a99a1 17%, #82d2f1 100%);
-  border-bottom: 3px solid black;
-  font-family: "Monda", sans-serif;
+  background-color: #343a40;
+  font-family: "Orbitron", sans-serif;
 }
 
-/* line 27, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
-.container .setup {
+/* line 27, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
+.inicio .setup {
   width: 100%;
   height: 100%;
 }
 
-/* line 31, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
-.container .contSetup {
+/* line 31, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
+.inicio .contSetup {
   display: flex;
   justify-content: end;
 }
 
 /* <--TECLADOS--> */
-/* line 40, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
+/* line 40, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
 .teclado1 .blackwidow {
   width: 100vh;
 }
 
-/* line 43, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
+/* line 43, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
 .teclado1 .contBlackwidow {
   display: flex;
   justify-content: center;
 }
 
-/* line 47, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
+/* line 47, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
 .teclado1 .descBlackwidow {
-  font-family: "Monda", sans-serif;
+  font-family: "Orbitron", sans-serif;
   line-height: 1.2;
   font-style: normal;
   border-bottom: 3px solid black;
   margin-bottom: 5px;
 }
 
-/* line 56, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
+/* line 56, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
 .teclado2 .xtrfy {
   width: 100vh;
 }
 
-/* line 59, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
+/* line 59, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
 .teclado2 .contXtrfy {
   display: flex;
   justify-content: center;
 }
 
-/* line 63, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
+/* line 63, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
 .teclado2 .descXtrfy {
-  font-family: "Monda", sans-serif;
+  font-family: "Orbitron", sans-serif;
   line-height: 1.2;
   font-style: normal;
   border-bottom: 3px solid black;
@@ -86,79 +85,73 @@ body {
 }
 
 /* <--YOUTUBE--> */
-/* line 73, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
+/* line 74, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
 .youtube {
   display: flex;
   justify-content: center;
-  border-bottom: 3px solid black;
-  margin-bottom: 5px;
-  padding-bottom: 5px;
+  margin-bottom: 3px;
+  padding-bottom: 3px;
+  height: 500px;
 }
 
-/* <--AURICULARES--> */
-/* line 84, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
-.auriculares1 .krakenx {
-  width: 100vh;
+/* line 80, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
+.youtube .youtubeVideo {
+  width: 90%;
+  height: 100%;
 }
 
-/* line 87, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
-.auriculares1 .contKrakenx {
-  display: flex;
-  justify-content: center;
+/* <--AURICULARES/TECLADOS--> */
+/* line 88, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
+.card {
+  background-color: #eff2e4;
 }
 
-/* line 91, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
-.auriculares1 .descKrakenx {
-  font-family: "Monda", sans-serif;
-  line-height: 1.2;
-  font-style: normal;
-  border-bottom: 3px solid black;
-  margin-bottom: 5px;
+/* line 90, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
+.card .boton {
+  background-color: #343a40;
 }
 
-/* line 100, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
-.auriculares2 .blackshark {
-  width: 100vh;
+/* line 92, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
+.card .boton:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
 
-/* line 103, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
-.auriculares2 .contBlackshark {
-  display: flex;
-  justify-content: center;
+/* line 97, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
+.card .boton:active {
+  transform: translateY(3px);
 }
 
-/* line 107, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
-.auriculares2 .descBlackshark {
-  font-family: 'Monda', sans-serif;
-  line-height: 1.2;
-  font-style: normal;
-  border-bottom: 3px solid black;
-  margin-bottom: 5px;
+/* line 100, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
+.card .botonfocus {
+  height: 60px;
 }
 
 /* <--CONTACTO--> */
-/* line 117, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
+/* line 107, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
 .formulario {
   background-color: #24303c;
   width: 400px;
   padding: 30px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 4px;
-  font-family: "Monda", sans-serif;
+  font-family: "Orbitron", sans-serif;
   color: white;
   box-shadow: 7px 13px 37px #000;
 }
 
-/* line 127, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
+/* line 118, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
 .formulario h1 {
   margin-top: 8px;
   margin-bottom: 10px;
-  font-family: "Monda", sans-serif;
+  font-family: "Orbitron", sans-serif;
   text-align: center;
 }
 
-/* line 133, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
+/* line 124, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
 .formulario .formi {
   width: 100%;
   background-color: #24303c;
@@ -166,11 +159,11 @@ body {
   border-radius: 4px;
   margin-bottom: 20px;
   border: 1px solid #1f53c5;
-  font-family: "Monda", sans-serif;
+  font-family: "Orbitron", sans-serif;
   color: white;
 }
 
-/* line 143, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
+/* line 134, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
 .formulario .boton {
   width: 100%;
   height: 45px;
@@ -180,73 +173,64 @@ body {
   color: white;
   text-transform: uppercase;
   background: linear-gradient(to left top, #005aa7, #fffde4);
-  font-family: "Monda", sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
-/* line 153, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
+/* line 144, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
 .formulario .boton:hover {
   cursor: pointer;
   transform: translateY(-3px);
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
 
-/* line 158, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
+/* line 149, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
 .formulario .boton:active {
   transform: translateY(3px);
 }
 
-/* line 161, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
+/* line 152, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
 .formulario .botonfocus {
   height: 60px;
 }
 
 /* <--FOOTER--> */
-/* line 169, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
-.container .facebook {
-  background: linear-gradient(to left top, #0f2f39, #0072ff);
-  color: white;
-  font-family: 'Monda', sans-serif;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-/* line 175, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
-.container .facebook:hover {
-  transform: translateY(-3px);
-  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-}
-
-/* line 180, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
-.container .instagram {
-  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
-  color: white;
-  font-family: 'Monda', sans-serif;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-/* line 186, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
-.container .instagram:hover {
-  transform: translateY(-3px);
-  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-}
-
-/* line 191, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
-.container .twitter {
-  background: linear-gradient(to right, #2980B9, #6DD5FA);
-  color: white;
-  font-family: 'Monda', sans-serif;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-/* line 197, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
-.container .twitter:hover {
-  transform: translateY(-3px);
-  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-}
-
-/* line 204, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_main.scss */
+/*.container{
+	.facebook{
+		background: linear-gradient(to left top, #0f2f39,#0072ff);
+		color: white;
+		font-family: $fontTitle;
+		cursor: pointer;
+		text-decoration: none;
+			&:hover{
+			transform: translateY(-3px);
+	    	transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+		}
+	}
+	.instagram{
+		background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+		color: white;
+		font-family: $fontTitle;
+		cursor: pointer;
+		text-decoration: none;
+			&:hover{
+			transform: translateY(-3px);
+	    	transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+		}
+	}
+	.twitter{
+		background: linear-gradient(to right, #2980B9, #6DD5FA);
+		color: white;
+		font-family: $fontTitle;
+		cursor: pointer;
+		text-decoration: none;
+			&:hover{
+			transform: translateY(-3px);
+	    	transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+		}
+	}
+	
+}*/
+/* line 195, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
 .whatsapp {
   position: fixed;
   bottom: 0;
@@ -256,38 +240,107 @@ body {
   cursor: pointer;
 }
 
-/* line 2, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_mixins.scss */
+/* line 204, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
+.footer {
+  padding: 4px 0;
+  background-color: #343a40;
+  color: white;
+}
+
+/* line 208, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
+.footer ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* line 215, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+/* line 219, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
+.footer ul ahover {
+  opacity: 1;
+}
+
+/* line 224, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
+.footer li {
+  padding: 0 10px;
+}
+
+/* line 227, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
+.footer .social {
+  text-align: center;
+  padding: 55px;
+}
+
+/* line 230, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
+.footer .social a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+/* line 242, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
+.footer .social ahover {
+  opacity: 0.9;
+}
+
+/* line 247, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_main.scss */
+.footer .copyright {
+  margin-top: 55px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+/* line 2, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_mixins.scss */
 .fontSize-xs {
   font-size: 18px;
 }
 
-/* line 2, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_mixins.scss */
+/* line 2, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_mixins.scss */
 .fontSize-sm {
   font-size: 20px;
 }
 
-/* line 2, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_mixins.scss */
+/* line 2, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_mixins.scss */
 .fontSize-md {
   font-size: 24px;
 }
 
-/* line 2, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_mixins.scss */
+/* line 2, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_mixins.scss */
 .fontSize-lg {
   font-size: 35px;
 }
 
-/* line 2, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_mixins.scss */
+/* line 2, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_mixins.scss */
 .fontSize-xlg {
   font-size: 45px;
 }
 
-/* line 7, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_mixins.scss */
+/* line 7, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_mixins.scss */
 .fontType-regular {
   font-family: "Monda", sans-serif;
   font-weight: 400;
 }
 
-/* line 7, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/Final_copia_3/sass/_mixins.scss */
+/* line 7, ../../../../../../../../../../../../../Users/Samba/Documents/TOTO/final/sass/_mixins.scss */
 .fontType-bold {
   font-family: "Monda", sans-serif;
   font-weight: 700;
