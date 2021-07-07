@@ -1,0 +1,254 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: $primario;
+	font-family: $fontTitle;
+}
+/* <--BANNER--> */
+.banner{
+	background-image: url("../media/logitechblanco.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	height: 25vh;
+}
+/* <--INICIO--> */
+.titulo{
+	.miPrimerEstilo{
+		color: $colorBlanco;
+		text-align:center;
+		background-color: $tercero;
+		font-family: $fontTitle;
+	}
+}
+.inicio{
+		.setup{
+		width: 100%;
+		height: 100%;
+	}
+	.contSetup{
+		display: flex;
+		justify-content:end;
+	}
+
+}
+
+/* <--TECLADOS--> */
+.teclado1{
+		.blackwidow{
+		width: 100vh;
+	}
+	.contBlackwidow{
+		display: flex;
+		justify-content:center;
+	}
+	.descBlackwidow{
+		font-family: $fontTitle;
+		line-height: 1.2;
+		font-style: normal;
+		border-bottom: 3px solid black;
+		margin-bottom:5px;
+	}
+}
+.teclado2{
+	.xtrfy{
+	width: 100vh;
+	}
+	.contXtrfy{
+		display: flex;
+		justify-content:center;
+	}
+	.descXtrfy{
+		font-family: $fontTitle;
+		line-height: 1.2;
+		font-style: normal;
+		border-bottom: 3px solid black;
+		margin-bottom:5px;
+
+	}
+}
+
+/* <--YOUTUBE--> */
+.youtube{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3px;
+	padding-bottom: 3px;
+	height: 500px;
+	.youtubeVideo{
+		width: 90%;
+		height: 100%;
+	}
+}
+
+/* <--AURICULARES/TECLADOS--> */
+
+.card{
+	background-color:$primario;
+		.boton{
+			background-color:$tercero;
+		    &:hover{
+		    	cursor:pointer;
+	    		transform: translateY(-3px);
+	    		transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+		    }
+		    &:active{
+		    	transform:translateY(3px);
+		    }
+		    &focus{
+		    	height: 60px;
+	    }
+	}
+}
+
+/* <--CONTACTO--> */
+.formulario{
+    background-color: $secundario;
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-family:$fontTitle;
+    color: $colorBlanco;
+    box-shadow: 7px 13px 37px #000;
+    h1{
+	    margin-top: 8px;
+	    margin-bottom: 10px;
+	    font-family:$fontTitle;
+	    text-align: center;
+    }
+    .formi{
+	    width: 100%;
+	    background-color: $secundario;
+	    padding: 10px;
+	    border-radius: 4px;
+	    margin-bottom: 20px;
+	    border: 1px solid #1f53c5;
+	    font-family:$fontTitle;
+	    color: $colorBlanco;
+	}
+	.boton{
+	    width: 100%;
+	    height: 45px;
+	    margin-top: 15px;
+	    border-radius: 4px;
+	    border:none;
+	    color: $colorBlanco;
+	    text-transform: uppercase;
+	    background: linear-gradient(to left top, #005aa7,#fffde4);
+	    font-family:$fontTitle;
+	    &:hover{
+	    	cursor:pointer;
+    		transform: translateY(-3px);
+    		transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+	    }
+	    &:active{
+	    	transform:translateY(3px);
+	    }
+	    &focus{
+	    	height: 60px;
+	    }
+	}
+}
+
+/* <--FOOTER--> */
+/*.container{
+	.facebook{
+		background: linear-gradient(to left top, #0f2f39,#0072ff);
+		color: white;
+		font-family: $fontTitle;
+		cursor: pointer;
+		text-decoration: none;
+			&:hover{
+			transform: translateY(-3px);
+	    	transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+		}
+	}
+	.instagram{
+		background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+		color: white;
+		font-family: $fontTitle;
+		cursor: pointer;
+		text-decoration: none;
+			&:hover{
+			transform: translateY(-3px);
+	    	transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+		}
+	}
+	.twitter{
+		background: linear-gradient(to right, #2980B9, #6DD5FA);
+		color: white;
+		font-family: $fontTitle;
+		cursor: pointer;
+		text-decoration: none;
+			&:hover{
+			transform: translateY(-3px);
+	    	transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+		}
+	}
+	
+}*/
+.whatsapp{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 50px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.footer{
+  padding:4px 0;
+  background-color:$tercero;
+  color:$colorBlanco;
+		ul {
+	  	padding:0;
+	  	list-style:none;
+	  	text-align:center;
+	  	font-size:18px;
+	  	line-height:1.6;
+	  	margin-bottom:0;
+	  		a {
+  			color:inherit;
+  			text-decoration:none;
+  			opacity:0.8;
+  			&hover{
+  				opacity:1;
+  			}
+		}
+	}
+		li {
+  		padding:0 10px;
+	}
+	.social {
+	  text-align:center;
+	  padding:55px;
+			  a {
+			  font-size:24px;
+			  width:40px;
+			  height:40px;
+			  line-height:40px;
+			  display:inline-block;
+			  text-align:center;
+			  border-radius:50%;
+			  border:1px solid #ccc;
+			  margin:0 8px;
+			  color:inherit;
+			  opacity:0.75;
+			  &hover{
+			  	opacity:0.9;
+			  }
+		}
+	}
+	.copyright {
+	  margin-top:55px;
+	  text-align:center;
+	  font-size:13px;
+	  color:#aaa;
+	  margin-bottom:0;
+	}
+}
