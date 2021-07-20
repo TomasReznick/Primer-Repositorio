@@ -2,18 +2,58 @@
 	margin: 0;
 	padding: 0;
 }
+
+::-webkit-scrollbar{
+	display:none;
+}
+
 body{
 	background-color: $primario;
 	font-family: $fontTitle;
 }
-/* <--BANNER--> */
-.banner{
-	background-image: url("../media/logitechblanco.jpg");
+
+@media all and (min-width: 375px){
+ 	.bannerInicio{
+	background-image: url("../mobile/setup2_mobile.jpg");
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
+	height: 100vh;
+}
+.banner{
+	background-image: url("../mobile/setup2_mobile.jpg");
+	background-size: auto;
+	background-position: center;
+	background-attachment: fixed;
+	height: 25vh;
+	}
+ }
+
+/* <--BANNER--> */
+.bannerInicio{
+	background-image: url("../media/setup2.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	height: 70vh;
+		.boton{
+		color: $colorBlanco;
+		text-align:center;
+		background-color: $tercero;
+		font-family: $fontTitle;
+		justify-content: center;
+		
+
+	}
+}
+.banner{
+	background-image: url("../media/setup2.jpg");
+	background-size: auto;
+	background-position: center;
+	background-attachment: fixed;
 	height: 25vh;
 }
+ 
 /* <--INICIO--> */
 .titulo{
 	.miPrimerEstilo{
@@ -35,41 +75,6 @@ body{
 
 }
 
-/* <--TECLADOS--> */
-.teclado1{
-		.blackwidow{
-		width: 100vh;
-	}
-	.contBlackwidow{
-		display: flex;
-		justify-content:center;
-	}
-	.descBlackwidow{
-		font-family: $fontTitle;
-		line-height: 1.2;
-		font-style: normal;
-		border-bottom: 3px solid black;
-		margin-bottom:5px;
-	}
-}
-.teclado2{
-	.xtrfy{
-	width: 100vh;
-	}
-	.contXtrfy{
-		display: flex;
-		justify-content:center;
-	}
-	.descXtrfy{
-		font-family: $fontTitle;
-		line-height: 1.2;
-		font-style: normal;
-		border-bottom: 3px solid black;
-		margin-bottom:5px;
-
-	}
-}
-
 /* <--YOUTUBE--> */
 .youtube{
 	display: flex;
@@ -84,7 +89,6 @@ body{
 }
 
 /* <--AURICULARES/TECLADOS--> */
-
 .card{
 	background-color:$primario;
 		.boton{
@@ -103,7 +107,22 @@ body{
 	}
 }
 
+/* <--COMPRA--> */
+.compra{
+	img{
+		height: 200px;
+		width: 100%;
+	}
+}
+
+
+
 /* <--CONTACTO--> */
+
+@media all and (min-width: 375px){
+	width: 250px;
+    padding: 10px;
+}
 .formulario{
     background-color: $secundario;
     width: 400px;
@@ -155,43 +174,48 @@ body{
 	}
 }
 
+/* <--ABOUT US--> */
+.aboutUs{
+	margin-top: 10%;
+	text-align: center;
+	.equipo{
+		display: flex;
+		text-align: center;
+		width: auto;
+		justify-content:center;
+		.miembro{
+			color: $colorBlanco;
+			margin: 5px;
+			margin-bottom: 50px;
+			width: 500px;
+			padding: 20px;
+			position: relative;
+			background-color: $secundario;			
+			.cargo{
+				margin: 12px 0px;
+			}
+		}
+		.miembroImg{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			position: absolute;
+			top: -85px;
+			left: 50%;
+			transform: translateX(-50%);
+			background: #fff;
+
+			img{
+				width: 100px;
+				height: 100px;
+				padding: 10px;
+				border-radius: 50%;
+			}
+		}
+	}
+}
+
 /* <--FOOTER--> */
-/*.container{
-	.facebook{
-		background: linear-gradient(to left top, #0f2f39,#0072ff);
-		color: white;
-		font-family: $fontTitle;
-		cursor: pointer;
-		text-decoration: none;
-			&:hover{
-			transform: translateY(-3px);
-	    	transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
-		}
-	}
-	.instagram{
-		background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
-		color: white;
-		font-family: $fontTitle;
-		cursor: pointer;
-		text-decoration: none;
-			&:hover{
-			transform: translateY(-3px);
-	    	transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
-		}
-	}
-	.twitter{
-		background: linear-gradient(to right, #2980B9, #6DD5FA);
-		color: white;
-		font-family: $fontTitle;
-		cursor: pointer;
-		text-decoration: none;
-			&:hover{
-			transform: translateY(-3px);
-	    	transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
-		}
-	}
-	
-}*/
 .whatsapp{
 	position: fixed;
 	bottom: 0;
@@ -240,8 +264,8 @@ body{
 			  color:inherit;
 			  opacity:0.75;
 			  &hover{
-			  	opacity:0.9;
-			  }
+			  	color:$colorBlanco;
+			}
 		}
 	}
 	.copyright {
@@ -250,5 +274,9 @@ body{
 	  font-size:13px;
 	  color:#aaa;
 	  margin-bottom:0;
+	  .aboutFooter{
+	  	text-decoration: none;
+	  	color:inherit;
+	  }
 	}
 }
